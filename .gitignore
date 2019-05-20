@@ -1,0 +1,11 @@
+/.gradle/
+/.idea/
+/build/
+/classes/
+/logs/
+/target/
+/test-output/
+/gradle/
+/out/
+*.iml
+debug*
