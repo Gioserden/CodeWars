@@ -15,7 +15,7 @@ import org.junit.Test;
  * replaceAll("(\\d+)", "<span style=\"color: orange\">$1</span>");
  * }
  */
-public class RoboScriptTest {
+public class RoboScript1Test {
 
   /**
    * Test 1.
@@ -24,7 +24,7 @@ public class RoboScriptTest {
   public void test1() {
     System.out.println("Code without syntax highlighting:   F3RF5LF7");
     System.out.println("Your code with syntax highlighting: "
-        + RoboScript.highlight("F3RF5LF7"));
+        + RoboScript1.highlight("F3RF5LF7"));
     System.out.println(
         "Expected syntax highlighting:       <span style=\"color: pink\">F</span><span "
             + "style=\"color: orange\">3</span><span style=\"color: green\">R</span>"
@@ -36,7 +36,7 @@ public class RoboScriptTest {
             + "<span style=\"color: green\">R</span><span style=\"color: pink\">F</span>"
             + "<span style=\"color: orange\">5</span><span style=\"color: red\">L</span>"
             + "<span style=\"color: pink\">F</span><span style=\"color: orange\">7</span>",
-        RoboScript.highlight("F3RF5LF7"));
+        RoboScript1.highlight("F3RF5LF7"));
   }
 
   /**
@@ -46,7 +46,7 @@ public class RoboScriptTest {
   public void test2() {
     System.out.println("Code without syntax highlighting:   FFFR345F2LL");
     System.out.println("Your code with syntax highlighting: "
-        + RoboScript.highlight("FFFR345F2LL"));
+        + RoboScript1.highlight("FFFR345F2LL"));
     System.out.println("Expected syntax highlighting:       <span style=\"color: pink\">FFF</span>"
         + "<span style=\"color: green\">R</span><span style=\"color: orange\">345</span>"
         + "<span style=\"color: pink\">F</span><span style=\"color: orange\">2</span>"
@@ -54,7 +54,7 @@ public class RoboScriptTest {
     assertEquals("<span style=\"color: pink\">FFF</span>"
         + "<span style=\"color: green\">R</span><span style=\"color: orange\">345</span>"
         + "<span style=\"color: pink\">F</span><span style=\"color: orange\">2</span>"
-        + "<span style=\"color: red\">LL</span>", RoboScript.highlight("FFFR345F2LL"));
+        + "<span style=\"color: red\">LL</span>", RoboScript1.highlight("FFFR345F2LL"));
   }
 
   /**
@@ -64,11 +64,11 @@ public class RoboScriptTest {
   public void test3() {
     System.out.println("Code without syntax highlighting:   12345678");
     System.out.println("Your code with syntax highlighting: "
-        + RoboScript.highlight("12345678"));
+        + RoboScript1.highlight("12345678"));
     System.out.println("Expected syntax highlighting:       "
         + "<span style=\"color: orange\">12345678</span>");
     assertEquals("<span style=\"color: orange\">12345678</span>",
-        RoboScript.highlight("12345678"));
+        RoboScript1.highlight("12345678"));
   }
 
   /**
@@ -78,10 +78,10 @@ public class RoboScriptTest {
   public void test4() {
     System.out.println("Code without syntax highlighting:   FFFFFFFFF");
     System.out.println("Your code with syntax highlighting: "
-        + RoboScript.highlight("FFFFFFFFF"));
+        + RoboScript1.highlight("FFFFFFFFF"));
     System.out.println("Expected syntax highlighting:       "
         + "<span style=\"color: pink\">FFFFFFFFF</span>");
     assertEquals("<span style=\"color: pink\">FFFFFFFFF</span>",
-        RoboScript.highlight("FFFFFFFFF"));
+        RoboScript1.highlight("FFFFFFFFF"));
   }
 }
